@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<div>
+  <div>
+    <h2>{{ details.post.title }}</h2>
+    <h2><a ui-sref="nav.profile({ id: details.post.userId })">{{ details.username }}</a></h2>
+    <likestar postid="{{ details.post.id }}"></likestar>
+    <blockquote>
+      <h3>{{ details.post.body }}</h3>
+    </blockquote>
+  </div>
+  <h4>Comments:</h4>
+  <div class="comment" ng-repeat="comment in details.post.comments">
+    <h4>{{ comment.name }}</h4>
+    <p>{{ comment.body }}</p>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<div class="container-fluid">
+    <h1>Posts</h1>
+    <blockquote class="row" ng-repeat="post in posts.posts">
+      <div class="col-md-10">
+        <h2
+          class="highlightTitle"
+          ui-sref="nav.details({ id: post.id, username: post.username })"
+        >
+          {{ post.title }}
+        </h2>
+        <likestar postid="{{ post.id }}"></likestar>
+      </div>
+      <a class="col-md-2 username" ui-sref="nav.profile({ id: post.userId })">{{ post.username }}</a>
+    </blockquote>
+
+</div>

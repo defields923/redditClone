@@ -1,0 +1,37 @@
+.nav {
+  padding: 0px 10px 0px 10px;
+  background-color: black;
+}
+
+#sub-body {
+  padding: 0px 20px 0px 20px;
+}
+
+blockquote {
+  border-left-color: lightgray;
+  border-bottom: 5px solid darkgray;
+}
+
+.comment {
+  border-bottom: 3px solid #eee;
+}
+
+.highlightTitle:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.glyphicon {
+  padding: 0px;
+  font-size: 30px;
+  text-shadow: 1px 2px black;
+}
+
+.greenStar {
+  color: green;
+  size:
+}
+
+.username {
+  margin-top: 10px;
+}

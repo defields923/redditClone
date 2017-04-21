@@ -1,0 +1,5 @@
+node_modules
+client/bower_components
+.git
+.env
+.eslintrc.js

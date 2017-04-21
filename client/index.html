@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <base href="/">
+    <meta charset="utf-8" />
+    <title>Reddit Clone</title>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="App/css/app.css">
+  </head>
+  <body>
+    <div ui-view></div>
+
+    <script src="App/App.js"></script>
+
+    <!-- CONTROLLERS -->
+    <script src="App/modules/nav/NavCtrl.js"></script>
+    <script src="App/modules/posts/PostsCtrl.js"></script>
+    <script src="App/modules/details/DetailsCtrl.js"></script>
+    <script src="App/modules/profile/ProfileCtrl.js"></script>
+
+    <!-- Services -->
+    <script src="App/services/FetchFact.js"></script>
+    <script src="App/services/LikeFact.js"></script>
+    <script src="App/services/ChangeNameFact.js"></script>
+
+    <!-- Directives -->
+    <script src="App/directives/LikeStarDir.js"></script>
+    <script src="App/directives/NameDir.js"></script>
+  </body>
+</html>
