@@ -1,4 +1,4 @@
-# Reddit Clone demonstration
+# Forum mockup demonstration
 
 ***
 
