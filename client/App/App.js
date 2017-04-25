@@ -36,9 +36,6 @@ angular.module('app', ['ui.router', 'ngResource'])
         post(FetchFactory, $stateParams) {
           return FetchFactory.getPost($stateParams.id);
         },
-        username($stateParams) {
-          return $stateParams.username;
-        },
       },
     })
     .state('nav.profile', {

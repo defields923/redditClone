@@ -1,5 +1,5 @@
 angular.module('app')
-.controller('DetailsController', function ($scope, post, username) {
+.controller('DetailsController', function ($scope, $stateParams, post) {
   this.post = post.data;
-  this.username = username;
+  this.username = $stateParams.username;
 });
