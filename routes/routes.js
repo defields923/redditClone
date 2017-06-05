@@ -84,7 +84,8 @@ router.get('/onePost', (req, res) => {
 
 router.put('/changeName', (req, res) => {
   const nameParams = {
-    url: `http://jsonplaceholder.typicode.com/users?${req.body.prop}=${req.body.name}`,
+    // TODO
+    url: `http://jsonplaceholder.typicode.com/users?${req.body.prop}=${req.body.currName}`,
     method: 'PUT',
     data: {
       [req.body.prop]: req.query.newName,
